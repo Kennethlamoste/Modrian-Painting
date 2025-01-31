@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Painting</title>
+</head>
+       
+<style>
+       
+   body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+
+   }
+
+   .mondrian{
+    display: grid;
+    grid-template-columns: 1fr 2fr  ;
+    grid-template-rows: 1fr 1fr 2fr ;
+    width: 600px; 
+    height: 600px;
+    background-color:white;
+    padding: 2px;
+
+   
+   }
+
+
+   .box{
+    border: 5px solid black;
+
+   }
+
+   .red{
+    background-color: red;
+    grid-column: 1 / 2;
+    grid-row:  1 / 2 ;
+
+   }
+
+   .blue{
+      background-color: blue;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      
+   }
+   .yellow{
+      background-color: yellow;
+      grid-column: 2 / 3;
+      grid-row: 3 / 4 ;
+      
+     
+   }
+
+   .orange{
+      background-color: orange;
+      grid-column: 1 / 2;
+      grid-row: 2  / 4 ;
+
+
+   }
+
+   .green{
+      background-color: green;
+     
+   }
+
+   
+   
+</style>
+
+
+
+<body>
+
+
+<div class="mondrian">
+   <div class="box red"></div>
+   <div class="box blue"></div>
+   <div class="box yellow"></div>
+   <div class="box orange"></div>
+   <div class="box green"></div>
+
+   
+</div>
+</body>
+</html>
